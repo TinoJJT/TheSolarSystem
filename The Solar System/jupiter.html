@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+  <!-- PAKOLLINEN OTSIKKO -->  
+  <title>Jupiter</title>
+
+
+    <!-- Meta elementti on tietoa tiedosta-->
+    
+    <!-- Internet Exploria varten, etta kayttaa uusinta versiota-->
+  <meta http-equiv="X-UA-Compatible"   content="IE=edge"> 
+
+    <!-- Skaala pixelit pixelille-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Pitaa olla mukana etta skandin toimii-->
+  <meta charset="UTF-8">
+
+    <!-- MUSITA VAIHTAA CONTENT OMAAN NIMEEN!!-->
+  <meta name="author" content="Tino">
+    
+
+    
+    <!-- linkit ulkoisiin tiedostoidin-->
+  <link href="objectPage.css" rel="stylesheet"    type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Martel" rel="stylesheet">
+    <script src="jupiter.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="content-inside">
+            <header>
+                <button type="button" onclick="location.href='MainPage.html'" class="top-return">Home</button>
+                <h1>Jupiter</h1>
+            </header>
+            
+            
+            <img class="main-image" src="images/jupiter600.png" alt="Jupiter" onclick="toggle()">
+            
+            <div id="Modal" class="modal">
+            <p id="caption"></p>
+              <p class="close" onclick="remove()">Close</p>
+              <img class="modal-content" id="img01" onclick="close()">
+            </div>
+            
+            <p><span>Diameter: </span>140 000km (11 times Earth)</p>
+            <p><span>Mass: </span>2*10<sup>27</sup> kg (320 times Earth)</p>
+            <p><span>Surface gravity: </span>2.6g</p>
+            <p><span>Surface temperature: </span>-108 Celsius.</p>
+            <p><span>Day length: </span>10h</p>
+            <p><span>Year length: </span>12 Earth years</p>
+            <p><span>Distance from the Sun: </span>7.8*10<sup>8</sup> km(5.2 AU)</p>
+            
+            
+            <h2>The king of planets</h2>
+            <p>Although all outer planets are bigger than the inner planets, Jupiter is especially big. It has 2.5 times the mass of all the other planets combined, and all of the other planets would fit inside it. Its gravity has a huge effect on its neighborhood, dramatically changing the path of comets passing through Jupiter’s orbit, and having a swarm of asteroids orbiting the Sun at the Jovian Larangian points. Its most prominent single feature, the Great Red Spot is larger than Earth.</p>
+            
+            <h2>Structure</h2>
+            <p>Like the other outer planets, also known as gas planets, Jupiter does not have a solid surface. Instead its composition of 90% Hydrogen, 10% Helium and trace amounts of other elements gradually get denser as the pressure rises plunging through the cloudy atmosphere. There are theories, but it is largely unknown what Jupiter is like deep inside, the only thing that is for sure is that the pressure is ginormous and temperature is very hot. </p>
+            
+            <h2>Clouds and weather</h2>
+            <p>Jupiter is the only planet along with Earth is highly colorful and detailed to the outside viewer. The appearance of Jupiter is dominated by the different color stripes of clouds going through, forming complex wind patterns. The wind speed near the equator commonly exceeds 100 meters per second. The Great Red Spot is a huge tornado, and even though scientist can’t explain why, this tornado has been ravaging Jupiter for at least a thousand years, although its size keeps going up and down time to time.</p>
+            
+            <div class = "image-paragraph">
+                <img class="side-image" src="images/ganymede300.png" alt="Ganymede" onclick="toggle4()">
+                <img class="side-image" src="images/io300.png" alt="Io" onclick="toggle2()">
+                <img class="side-image" src="images/europa300.png" alt="Europa" onclick="toggle3()">
+                <img class="side-image" src="images/callisto300.png" alt="Callisto" onclick="toggle5()">
+                <h2>The Jovian moons</h2>
+                <p>Jupiter has 63 known moons at the time of writing this, but the four largest ones, the Galilean moons, are by far the most massive out of these. Historically the Galilean moons (Io, Europa, Ganymede and Callisto) are very significant. Discovered by Galileo Galilei in 1610 using his newly invented telescope, they were the first objects that clearly were orbiting something else than the Earth, which at the time caused a lot of anger from the church, as this went against the current Earth centric universe model. <br>
+                Ganymede is the largest moon in the Solar System, both in Mass and Diameter, containing over a third of all the mass in the Jovian moons. The yellow moon Io is the most geologically active object in the Solar System, with over 400 active volcanoes, producing plumes of sulfur 500km high, and lava rivers over 500km long. It is also the densest moon in the Solar System. Europa, the smallest of the Galilean moons, but still 6th largest in the solar system, is the place many believe is the most likely candidate of life outside Earth. Although thin, it has an atmosphere of mostly oxygen, and many predict that under its smooth surface (smoothest of any body in the Solar System) lies oceans of liquid water. And finally to give contrast to Europa is Callisto, which in turn has the most heavily crated surface in the Solar System, blocking thousands of meteorites falling towards Jupiter and no geological activity to smoothen it out.
+                </p>
+            </div>
+            
+        </div>
+        
+    </div>
+    <div class="botbut">
+        <button type="button" onclick="location.href='MainPage.html'" class="bottom-reutrn">Home</button>
+        <button type="button" onclick="location.href='mars.html'" class="previous">Previous</button>
+        <button type="button" onclick="location.href='saturn.html'" class="next">Next</button>
+    </div>
+    
+    <footer>
+        <p>Made by Tino Tero 2018</p>
+        <p>Photos by NASA, Edited by Tino Tero</p>
+    </footer>
+</body>

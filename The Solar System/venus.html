@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+  <!-- PAKOLLINEN OTSIKKO -->  
+  <title>Venus</title>
+
+
+    <!-- Meta elementti on tietoa tiedosta-->
+    
+    <!-- Internet Exploria varten, etta kayttaa uusinta versiota-->
+  <meta http-equiv="X-UA-Compatible"   content="IE=edge"> 
+
+    <!-- Skaala pixelit pixelille-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Pitaa olla mukana etta skandin toimii-->
+  <meta charset="UTF-8">
+
+    <!-- MUSITA VAIHTAA CONTENT OMAAN NIMEEN!!-->
+  <meta name="author" content="Tino">
+    
+
+    
+    <!-- linkit ulkoisiin tiedostoidin-->
+  <link href="objectPage.css" rel="stylesheet"    type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Martel" rel="stylesheet">
+    <script src="venus.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="content-inside">
+            <header>
+                <button type="button" onclick="location.href='MainPage.html'" class="top-return">Home</button>
+                <h1>Venus</h1>
+            </header>
+            
+            
+            <img class="main-image" src="images/venus600.png" alt="Venus" onclick="toggle()">
+            
+            <div id="Modal" class="modal">
+            <p id="caption"></p>
+              <p class="close" onclick="remove()">Close</p>
+              <img class="modal-content" id="img01" onclick="close()">
+            </div>
+            
+            <p><span>Diameter: </span>12000km (0.95 times Earth diameter)</p>
+            <p><span>Mass: </span>5*10<sup>24</sup> kg (0.86 times Earth mass)</p>
+            <p><span>Surface gravity: </span>0.9g</p>
+            <p><span>Surface temperature: </span>460 Celsius</p>
+            <p><span>Rotation period: </span>243 Earth days</p>
+            <p><span>Year length: </span>224 Earth days</p>
+            <p><span>Distance from the Sun: </span>1.1*10<sup>8</sup> km(0.4 AU)</p>
+            
+            
+            <h2>Second planet from the Sun </h2>
+            <p>The planet closest to Earth, and the one by far the most similar in size, called Earths sister planet by some people. Because of Venuses close proximity to Earth and the Sun, Venus is by far the brightest object in the sky after the Sun and our Moon, which is why many people incorrectly identify it as the Northern Star(which by the way isn’t even anywhere close the brightest star). Venus also holds one of the biggest mysteries in the Solar System, it spins in the “wrong direction”, and scientist can’t really explain why. Due to this, Venus’s effective day length is actually shorter than its rotation period, about 116 Earth days. Venus is the other planet in the Solar System not to have any moons of its own.</p>
+            
+            <h2>Physical manifestation of hell</h2>
+            <p>Because of Venus’s similar size to Earth, some might believe that it may be a viable place for humans to visit someday. Well it’s not, it’s actually even less hospitable than Mercury, which had the extremely irregular temperature. Temperature of Venus is very stable locked in at 460 Celsius, making it the hottest planet in the Solar System. This is due to Venus having a thick atmosphere... A crushing pressure 100 times greater than that of Earth. Doesn’t sound bad enough? Well it’s also always raining in Venus, but instead of water, it rains Sulfuric Acid. The longest any space probe has survived on Venus is about one minute, before being destroyed by the hostile environment, and that was a miracle of engineering already. \n
+            Although such conditions can never be quite achieved on Earth, Venus is many times used as a warning of what man made climate change can make Earth. As much of the reason of why Venus is so hostile is because of the high amount of carbon dioxide in its atmosphere.
+            </p>
+        </div>
+        
+    </div>
+    <div class="botbut">
+        <button type="button" onclick="location.href='MainPage.html'" class="bottom-reutrn">Home</button>
+        <button type="button" onclick="location.href='mercury.html'" class="previous">Previous</button>
+        <button type="button" onclick="location.href='earth.html'" class="next">Next</button>
+    </div>
+    
+    <footer>
+        <p>Made by Tino Tero 2018</p>
+        <p>Photos by NASA, Edited by Tino Tero</p>
+    </footer>
+</body>

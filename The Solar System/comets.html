@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+  <!-- PAKOLLINEN OTSIKKO -->  
+  <title>Comets</title>
+
+
+    <!-- Meta elementti on tietoa tiedosta-->
+    
+    <!-- Internet Exploria varten, etta kayttaa uusinta versiota-->
+  <meta http-equiv="X-UA-Compatible"   content="IE=edge"> 
+
+    <!-- Skaala pixelit pixelille-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Pitaa olla mukana etta skandin toimii-->
+  <meta charset="UTF-8">
+
+    <!-- MUSITA VAIHTAA CONTENT OMAAN NIMEEN!!-->
+  <meta name="author" content="Tino">
+    
+
+    
+    <!-- linkit ulkoisiin tiedostoidin-->
+  <link href="objectPage.css" rel="stylesheet"    type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Martel" rel="stylesheet">
+    <script src="comets.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="content-inside">
+            <header>
+                <button type="button" onclick="location.href='MainPage.html'" class="top-return">Home</button>
+                <h1>Comets</h1>
+            </header>
+            
+            
+            <img class="main-image" src="images/comet600.png" alt="Comet" onclick="toggle()">
+            
+            <div id="Modal" class="modal">
+            <p id="caption"></p>
+              <p class="close" onclick="remove()">Close</p>
+              <img class="modal-content" id="img01" onclick="close()">
+            </div>
+            
+            <p>Comets are much like asteroids, but they have their distinction. While asteroids are rocks that can withstand the heat of the Sun even nearby, comets are bodies made of ices that sublimate a bit every time they get nearby. The reason comets still exist instead of being all evaporated, is because outer planets (mostly Neptune) keep disturbing the orbits of icy bodies that are stable far in the cold far away region, to plunge in closer to the sun where they slowly get destroyed. Some comets make multiple elliptical orbits around the sun before completely evaporated, and some get destroyed on the first run. The gasses erupting from the evaporating comets can be seen as long shiny tails, giving comets their signature look.</p>
+            
+            <h2>History</h2>
+            <p>The shine from the tails of comets is many times very bright, and some are visible even during daylight. This strange phenomenon was considered an omen of either good or bad luck by many astrologers in the history, and can be find in many old writings. This has been an excellent tool for historians to date past events, as many cultures would write about the same great comets, allowing the dates to be linked together.</p>
+            
+            <h2>Comets as meteors</h2>
+            <p>Some comets have a path that go through Earths orbit as well. While a direct hit is very unlikely, quite often does Earth go through the long trail left behind by a comet. This is the most common reason for the event of a meteor shower. As Earth plunges through the small debris, hundreds of small meteors appear in the sky creating a spectacular visual effect. And the best part of this is that certain meteor showers happens the same time each year, making it easy to set up a time to go see one.</p>
+        </div>
+        
+    </div>
+    <div class="botbut">
+        <button type="button" onclick="location.href='MainPage.html'" class="bottom-reutrn">Home</button>
+        <button type="button" onclick="location.href='plutoids.html'" class="previous">Previous</button>
+    </div>
+    
+    <footer>
+        <p>Made by Tino Tero 2018</p>
+        <p>Photos by NASA, Edited by Tino Tero</p>
+    </footer>
+</body>

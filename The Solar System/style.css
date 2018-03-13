@@ -1,0 +1,123 @@
+html {
+    height: 98%;
+}
+
+body {
+    
+    
+    /*Laittaa vali-viivat jos sana katkeaa sivun reunasta */
+    -ms-hyphens:auto;
+    -webkit-hyphens:auto;
+    hyphens: auto;
+    background-image: url(images/BackgroundFinal.jpg);
+    background-size:cover;
+    color: #FAFAFA;
+    font-family: 'Martel', serif;
+    height: 98%;
+    margin: 0;
+    padding: 0;
+    }
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    margin: 5px;
+}
+
+p {
+    margin: 5px;
+}
+
+header{
+    margin-top: -20px;
+    padding: 0px;
+}
+
+nav {
+    align-items: center;
+}
+
+nav img {
+    width: 100%;
+    margin: 0px;
+}
+
+
+.content {
+    min-height: 100%;
+}
+
+.content-inside {
+    padding-bottom: 20px;
+}
+
+.moreButton{
+    text-align:center;
+}
+
+button {
+    background-color: #424242;
+    color: #FAFAFA;
+    width: 20%;
+}
+
+nav p{
+    text-align: center;
+    margin: 0px;
+}
+
+footer {
+    height: 3.5em;
+    margin-top: -30px;
+    background-color: #424242;
+}
+
+footer p {
+    font-size: auto;
+    margin: 0;
+}
+
+
+
+
+@media only screen and (max-width:500px){
+    .flex-container {display: flex;
+                    flex-wrap: wrap;}
+    .flex-item{
+        font-size: 3.9vw;
+        width: 24%;
+        margin: 0.5%;
+    }
+    
+    .final4{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 501px) {
+    .flex-container {display: flex;
+                    flex-wrap: wrap;}
+    .flex-item{
+        font-size: 2.6vw;
+        width: 15.6%;
+        margin: 0.5%;
+    }
+    button{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+
+    .flex-container {display: flex}
+    .flex-item {
+        font-size: 1.3vw;
+        flex:1;
+        margin: 0.5%;
+    }
+    button{
+        display: none;
+    }
+}

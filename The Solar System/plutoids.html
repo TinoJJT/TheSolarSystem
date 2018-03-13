@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+  <!-- PAKOLLINEN OTSIKKO -->  
+  <title>Plutoids</title>
+
+
+    <!-- Meta elementti on tietoa tiedosta-->
+    
+    <!-- Internet Exploria varten, etta kayttaa uusinta versiota-->
+  <meta http-equiv="X-UA-Compatible"   content="IE=edge"> 
+
+    <!-- Skaala pixelit pixelille-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Pitaa olla mukana etta skandin toimii-->
+  <meta charset="UTF-8">
+
+    <!-- MUSITA VAIHTAA CONTENT OMAAN NIMEEN!!-->
+  <meta name="author" content="Tino">
+    
+
+    
+    <!-- linkit ulkoisiin tiedostoidin-->
+  <link href="objectPage.css" rel="stylesheet"    type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Martel" rel="stylesheet">
+    <script src="plutoids.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="content-inside">
+            <header>
+                <button type="button" onclick="location.href='MainPage.html'" class="top-return">Home</button>
+                <h1>Plutoids</h1>
+            </header>
+            
+            
+            <img class="main-image" src="images/plutoids600.png" alt="The 4 Largest Plutoids on scale" onclick="toggle()">
+            
+            <div id="Modal" class="modal">
+            <p id="caption"></p>
+              <p class="close" onclick="remove()">Close</p>
+              <img class="modal-content" id="img01" onclick="close()">
+            </div>
+            
+            
+            <h2 >Definition</h2>
+            <p>Plutoids are dwarf planets that orbit the Sun further out than Neptune. Its a new group of celestial objects that was defined in 2006, after it was discovered that there are planet-like objects even more massive than Pluto further out. Instead of adding these new objects to the list of planets, it was decided to remove Pluto from the list of planets and create a new group with slightly different properties. Today there is a large list of plutoids and possible plutoid candidates, but in this page the most important ones are presented.</p>
+            
+            
+            <div class = "image-paragraph">
+                <img class="side-image" src="images/pluto300.png" alt="Pluto" onclick="toggle2()">
+                <h2>Pluto</h2>
+                <p>Pluto is the first plutoid ever discovered in 1930 which was originally classified as a planet, even though its size of 2400km, and mass off 1.3*10<sup>22</sup> (0.002*Earth mass) make it much smaller than any other planet. It has a highly elliptical orbit with a distance between 4.4 and 7.4 trillion kilometers (30 – 49AU) from the Sun. Like all plutoids, it is very cold with an average surface temperature of -229Celcius. Pluto has five moons called Charon, Nix, Hydra, Kerberos and Styx. Out of these Charon is by far the largest, having half the diameter of Pluto.</p>
+            </div>
+            
+            <div class = "image-paragraph">
+                <img class="side-image" src="images/eris300.png" alt="Pluto" onclick="toggle3()">
+                <h2>Eris</h2>
+                <p>The most massive plutoid discovered and the original reason of why the class of plutoids was defined.  Although slightly smaller than Pluto in size, it is much denser and thus more massive (about 127% Pluto mass), making it the 9th most massive object orbiting the Sun. The diameter of Eris is about 2300km. The reason why Eris was so hard to find and was only discovered in the year 2005, is because it is so far. Orbiting at a distance of 68AU away, and only completing one revolution around the Sun every 558 years. Eris has one known moon, Dysmonia.</p>
+            </div>
+            
+            <div class = "image-paragraph">
+                <img class="side-image" src="images/haumea300.png" alt="Haumea" onclick="toggle4()">
+                <h2>Haumea</h2>
+                <p>The second plutoid to be discovered in 2004, although not designated as one until 2008. Haumea is about one third of Plutos mass and at largest about 2000km long. Its rapid rotation rate of 4 hour stretches it shape greatly, giving it its signature look. Haumea has two moons, Hiʻiaka and Namaka, tought to be originated from a giant collision event on Haumea.</p>
+            </div>
+            
+        </div>
+        
+    </div>
+    <div class="botbut">
+        <button type="button" onclick="location.href='MainPage.html'" class="bottom-reutrn">Home</button>
+        <button type="button" onclick="location.href='sun.html'" class="previous">Previous</button>
+        <button type="button" onclick="location.href='asteroids.html'" class="next">Next</button>
+    </div>
+    
+    <footer>
+        <p>Made by Tino Tero 2018</p>
+        <p>Photos by NASA, Edited by Tino Tero</p>
+    </footer>
+</body>

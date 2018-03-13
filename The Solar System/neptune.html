@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+  <!-- PAKOLLINEN OTSIKKO -->  
+  <title>Neptune</title>
+
+
+    <!-- Meta elementti on tietoa tiedosta-->
+    
+    <!-- Internet Exploria varten, etta kayttaa uusinta versiota-->
+  <meta http-equiv="X-UA-Compatible"   content="IE=edge"> 
+
+    <!-- Skaala pixelit pixelille-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Pitaa olla mukana etta skandin toimii-->
+  <meta charset="UTF-8">
+
+    <!-- MUSITA VAIHTAA CONTENT OMAAN NIMEEN!!-->
+  <meta name="author" content="Tino">
+    
+
+    
+    <!-- linkit ulkoisiin tiedostoidin-->
+  <link href="objectPage.css" rel="stylesheet"    type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Martel" rel="stylesheet">
+    <script src="neptune.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="content-inside">
+            <header>
+                <button type="button" onclick="location.href='MainPage.html'" class="top-return">Home</button>
+                <h1>Neptune</h1>
+            </header>
+            
+            
+            <img class="main-image" src="images/neptune600.png" alt="Neptune" onclick="toggle()">
+            
+            <div id="Modal" class="modal">
+            <p id="caption"></p>
+              <p class="close" onclick="remove()">Close</p>
+              <img class="modal-content" id="img01" onclick="close()">
+            </div>
+            
+            <p><span>Diameter: </span>49 000km (4 times Earth)</p>
+            <p><span>Mass: </span>1.0*10<sup>26</sup> kg (17 times Earth)</p>
+            <p><span>Surface gravity: </span>1.1g</p>
+            <p><span>Surface temperature: </span>-200 Celsius.</p>
+            <p><span>Day length: </span>16h</p>
+            <p><span>Year length: </span>164.8 Earth years</p>
+            <p><span>Distance from the Sun: </span>4.5*10<sup>9</sup> km(30 AU)</p>
+            
+            
+            <h2>The second ice giant</h2>
+            <p>Neptune is also an ice giant like Uranus, and is very similar. However, Neptune is denser, and has an active atmosphere. Neptune has visible clouds and wind whipping up stripes on its surface. Neptune is very deep blue overall in color, for a reason that is not exactly known.</p>
+            
+            <h2>Discovery</h2>
+            <p>Invisible to the naked eye, Neptune could have not been seen before the invention of the telescope. Galileo Galilei actually saw Neptune through his telescope already in the 1600s, but thought it to be a faint star. Over 200 years later in the year 1846, it was found by the Astronomer Johann Galle, after the mathematician Urbain Le Verrier sent him the location he calculated the planet to be, through observation of orbit of Uranus. This makes Neptune the only planet in the Solar System to be found through math, instead of blind luck by scanning the skies.</p>
+            
+            <div class = "image-paragraph">
+                <img class="side-image" src="images/triton300.png" alt="Triton" onclick="toggle2()">
+                <h2>Moons</h2>
+                <p>Neptune has 14 known moons. Out of these Triton is by far the largest. Triton orbits Neptune backwards, likely the result of it being a former plutoid captured by Neptune. The interesting part of Triton is that its relatively smooth, indicating it being one of the few bodies in the solar system to be geologically active. Also Triton has been seen to have active geysers, erupting liquid nitrogen to the surface.</p>
+            </div>
+        </div>
+        
+    </div>
+    <div class="botbut">
+        <button type="button" onclick="location.href='MainPage.html'" class="bottom-reutrn">Home</button>
+        <button type="button" onclick="location.href='uranus.html'" class="previous">Previous</button>
+        <button type="button" onclick="location.href='sun.html'" class="next">Next</button>
+    </div>
+    
+    <footer>
+        <p>Made by Tino Tero 2018</p>
+        <p>Photos by NASA, Edited by Tino Tero</p>
+    </footer>
+</body>

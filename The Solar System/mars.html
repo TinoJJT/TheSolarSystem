@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+  <!-- PAKOLLINEN OTSIKKO -->  
+  <title>Mars</title>
+
+
+    <!-- Meta elementti on tietoa tiedosta-->
+    
+    <!-- Internet Exploria varten, etta kayttaa uusinta versiota-->
+  <meta http-equiv="X-UA-Compatible"   content="IE=edge"> 
+
+    <!-- Skaala pixelit pixelille-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Pitaa olla mukana etta skandin toimii-->
+  <meta charset="UTF-8">
+
+    <!-- MUSITA VAIHTAA CONTENT OMAAN NIMEEN!!-->
+  <meta name="author" content="Tino">
+    
+
+    
+    <!-- linkit ulkoisiin tiedostoidin-->
+  <link href="objectPage.css" rel="stylesheet"    type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Martel" rel="stylesheet">
+    <script src="mars.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="content-inside">
+            <header>
+                <button type="button" onclick="location.href='MainPage.html'" class="top-return">Home</button>
+                <h1>Mars</h1>
+            </header>
+            
+            
+            <img class="main-image" src="images/mars600.png" alt="Mars" onclick="toggle()">
+            
+            <div id="Modal" class="modal">
+            <p id="caption"></p>
+              <p class="close" onclick="remove()">Close</p>
+              <img class="modal-content" id="img01" onclick="close()">
+            </div>
+            
+            <p><span>Diameter: </span>6800km (0.5 times Earth)</p>
+            <p><span>Mass: </span>6*10<sup>23</sup> kg (0.1 times Earth)</p>
+            <p><span>Surface gravity: </span>0.4g</p>
+            <p><span>Surface temperature: </span>Average of -63 Celsius.</p>
+            <p><span>Day length: </span>24h 37min</p>
+            <p><span>Year length: </span>687 Earth days</p>
+            <p><span>Distance from the Sun: </span>2.3*10<sup>8</sup> km(1.5 AU)</p>
+            
+            
+            <h2>The fourth planet</h2>
+            <p>The last of the rocky inner planets. It is the location of many fictional stories and to many the first target of space colonialization. Indeed it’s the most hospitable planet after Earth, although that isn’t saying much. The biggest difficulties are its cold temperature, and its very thin and unbreathable atmosphere, and also what many don’t consider, the high amount of ionizing solar radiation on its surface. For long time stays, its low gravity would also cause problems to humans. It can easily be seen from Earth as a red dot during night times when properly aligned.</p>
+            
+            <h2>History</h2>
+            <p> Shortly after its formation, Mars used to be much warmer and have a much thicker atmosphere. Recent findings also suggest that liquid water used to be prominent on the surface, and volcanic activity was great, all around a much more pleasant place for humans. But because of the small size of Mars, all of this quickly diminished (on astronomical timescales). The atmosphere floated away, it got colder, and the geological activity stopped. Now days water only exist as permafrost on the poles of mars.</p>
+            
+            <div class = "image-paragraph">
+                <img class="side-image" src="images/phobos300.png" alt="Phobos" onclick="toggle2()">
+                <h2>Phobos</h2>
+                <p>One of the two Martian moons. This tiny moon (22km diameter) orbits very close to Mars, only 6000km above the surface of Mars, completing one orbit every 7 hours. Phobos has one of the blackest surfaces of any body in the Solar System, absorbing 93% of all light. And because of its low gravity it has very irregular shape, with the crater called Stickney being the most prominent feature (visible in picture).</p>
+            </div>
+            
+            <div class = "image-paragraph">
+                <img class="side-image" src="images/deimos300.png" alt="Deimos" onclick="toggle3()">
+                <h2>Deimos</h2>
+                <p>The other Martian moon, and even smaller than the previous one. It is only about 12km in size, making it the smallest object that will be individually presented in this website. It orbits Mars 23 000km away, which is much higher than Phobos, but still very low compared to most other moons. Due to its low mass, the most interesting characteristic of this moon is its low gravity. You would weigh 3000 times less on Deimos than on Earth (average human would weigh only 20grams), in fact the gravity is so low, that a human could jump from Deimos all the way to Mars. Although I don’t suggest this as this jump would take hours and you would end up crashing on the surface of Mars at over 1kilometer per second.</p>
+            </div>
+        </div>
+        
+    </div>
+    <div class="botbut">
+        <button type="button" onclick="location.href='MainPage.html'" class="bottom-reutrn">Home</button>
+        <button type="button" onclick="location.href='earth.html'" class="previous">Previous</button>
+        <button type="button" onclick="location.href='jupiter.html'" class="next">Next</button>
+    </div>
+    
+    <footer>
+        <p>Made by Tino Tero 2018</p>
+        <p>Photos by NASA, Edited by Tino Tero</p>
+    </footer>
+</body>

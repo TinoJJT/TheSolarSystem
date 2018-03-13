@@ -1,0 +1,252 @@
+html {
+    height: 98%;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+    font-size: 150%;
+    font-weight: bold;
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 60%;
+    max-width: 70%;
+    text-align: center;
+    color: #ccc;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption { 
+    animation-name: zoom;
+    animation-duration: 0.9s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+body {
+    
+    /*Laittaa vali-viivat jos sana katkeaa sivun reunasta */
+    -ms-hyphens:auto;
+    -webkit-hyphens:auto;
+    hyphens: auto;
+    background-image: url(images/BackgroundFinal.jpg);
+    background-size:cover;
+    color: #FAFAFA;
+    font-family: 'Martel', serif;
+    height: 98%;
+    margin: 0;
+    padding: 0;
+    }
+
+h1 {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+}
+
+h2 {
+    margin: 5px;
+}
+
+p {
+    margin: 5px;
+}
+
+span {
+    font-weight: bold;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+}
+
+.content {
+    min-height: 100%;
+}
+
+.content-inside {
+    padding-bottom: 20px;
+    overflow: auto;
+}
+
+button {
+    z-index: +1;
+    background-color: #424242;
+    color: #FAFAFA;
+    margin: 0px;
+    width: 20%;
+    height: 2em;
+}
+
+.top-return {
+    margin-right: -20%;
+}
+
+.botbut{
+    margin-top: -10px;
+}
+
+
+.next {
+    float: right;
+}
+
+footer {
+    padding-left: 5px;
+    height: 3.5em;
+    background-color: #424242;
+}
+
+footer p {
+    font-size: auto;
+    margin: 0;
+}
+
+.side-image {
+    clear: right;
+}
+
+
+@media only screen and (max-width:500px){
+    
+    .main-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 100%;
+    }
+    
+    .side-image {
+        float: right;
+        margin-left: 5px;
+        margin-right: 5px;
+        width: 30%;
+        height: 100%;
+    }
+    
+    .modal-content {
+        width: 100%;
+    }
+    
+    .close {
+        top 10px;
+        font-size: 25px
+    }
+    
+    #caption{
+        position: absolute;
+        top: 15px;
+        left: 35px;
+    }
+    
+}
+
+@media only screen and (min-width: 501px) {
+    
+    .main-image {
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 50%;
+    height: 100%;
+    }
+    
+    .side-image {
+        float: right;
+        margin-left: 5px;
+        margin-right: 5px;
+        width: 30%;
+        height: 100%;
+    }
+    
+    .modal-content {
+        margin-top: -20px;
+        margin-bottom: 150px;
+        width: 80%;
+    }
+    
+    #caption{
+        position: absolute;
+        top: 15px;
+        left: 35px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .main-image {
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 30%;
+    height: 100%;
+    }
+    
+    .side-image {
+        float: right;
+        margin-left: 5px;
+        margin-right: 5px;
+        width: 300px;
+        height: 300px;
+        
+    }
+    
+    .top-return {
+        display: none;
+    }
+    
+    .modal-content {
+        position: absolute;
+        top: 25px;
+        left: 25%;
+        width: 50%;
+        margin-bottom: 5%;
+    }
+    
+    #caption{
+        position: relative;
+        float: right;
+        width: 25%;
+        margin-right: 20px;
+    }
+    
+    .image-paragraph{
+        min-height: 300px;
+    }
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+  <!-- PAKOLLINEN OTSIKKO -->  
+  <title>Saturn</title>
+
+
+    <!-- Meta elementti on tietoa tiedosta-->
+    
+    <!-- Internet Exploria varten, etta kayttaa uusinta versiota-->
+  <meta http-equiv="X-UA-Compatible"   content="IE=edge"> 
+
+    <!-- Skaala pixelit pixelille-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Pitaa olla mukana etta skandin toimii-->
+  <meta charset="UTF-8">
+
+    <!-- MUSITA VAIHTAA CONTENT OMAAN NIMEEN!!-->
+  <meta name="author" content="Tino">
+    
+
+    
+    <!-- linkit ulkoisiin tiedostoidin-->
+  <link href="objectPage.css" rel="stylesheet"    type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Martel" rel="stylesheet">
+    <script src="saturn.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="content-inside">
+            <header>
+                <button type="button" onclick="location.href='MainPage.html'" class="top-return">Home</button>
+                <h1>Saturn</h1>
+            </header>
+            
+            
+            <img class="main-image" src="images/saturn600.png" alt="Saturn" onclick="toggle()">
+            
+            <div id="Modal" class="modal">
+            <p id="caption"></p>
+              <p class="close" onclick="remove()">Close</p>
+              <img class="modal-content" id="img01" onclick="close()">
+            </div>
+            
+            <p><span>Diameter: </span>115 000km (9 times Earth)</p>
+            <p><span>Mass: </span>5.7*10<sup>26</sup> kg (95 times Earth)</p>
+            <p><span>Surface gravity: </span>1g</p>
+            <p><span>Surface temperature: </span>-139 Celsius.</p>
+            <p><span>Day length: </span>10.5h</p>
+            <p><span>Year length: </span>29.5 Earth years</p>
+            <p><span>Distance from the Sun: </span>1.4*10<sup>9</sup> km(9.5 AU)</p>
+            
+            
+            <h2>The one with the rings</h2>
+            <p>The second largest planet in the Solar System, and if one would count in the rings, it would be even bigger than Jupiter. However, it is the least dense planet by far in the Solar System, in fact it’s one of the few bodies in the Solar System that has lower density than water. Big reason for this is that Saturn is made out of 96.3% Hydrogen, the lightest element.</p>
+            
+            <h2>Rings</h2>
+            <p>The thing that everyone knows Saturn for, but rare know what the rings are made of. Contrary to popular belief, the rings are not solid objects. Instead the rings are a group of innumerable small objects orbiting Saturn together, ranging in size from small specs to 10m boulders. The rings are made out of 93% frozen water. The other outer planets actually have rings as well, but the ones of Saturn are by far the biggest and most visible.</p>
+            
+            <div class = "image-paragraph">
+                <img class="side-image" src="images/titan300.png" alt="Miranda" onclick="toggle2()">
+                <h2>Moons of Saturn</h2>
+                <p>As of writing, Saturn has 62 known moons. Out of these Titan, is by far the largest, compromising 96% of all the mass of the moons of Saturn. It is also the second largest moon in the Solar System and the first to be discovered after the Galilean moons. Titan is also the only moon with a dense atmosphere, which leads to another special feature of the moon. It’s the only place on the Solar System along with Earth where we have found stable liquids on the surface. However, unlike on Earth this isn’t water, Titan has lakes of liquid methane.</p>
+            </div>
+        </div>
+        
+    </div>
+    <div class="botbut">
+        <button type="button" onclick="location.href='MainPage.html'" class="bottom-reutrn">Home</button>
+        <button type="button" onclick="location.href='jupiter.html'" class="previous">Previous</button>
+        <button type="button" onclick="location.href='uranus.html'" class="next">Next</button>
+    </div>
+    
+    <footer>
+        <p>Made by Tino Tero 2018</p>
+        <p>Photos by NASA, Edited by Tino Tero</p>
+    </footer>
+</body>

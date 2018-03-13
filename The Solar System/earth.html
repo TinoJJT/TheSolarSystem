@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+  <!-- PAKOLLINEN OTSIKKO -->  
+  <title>Earth</title>
+
+
+    <!-- Meta elementti on tietoa tiedosta-->
+    
+    <!-- Internet Exploria varten, etta kayttaa uusinta versiota-->
+  <meta http-equiv="X-UA-Compatible"   content="IE=edge"> 
+
+    <!-- Skaala pixelit pixelille-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Pitaa olla mukana etta skandin toimii-->
+  <meta charset="UTF-8">
+
+    <!-- MUSITA VAIHTAA CONTENT OMAAN NIMEEN!!-->
+  <meta name="author" content="Tino">
+    
+
+    
+    <!-- linkit ulkoisiin tiedostoidin-->
+  <link href="objectPage.css" rel="stylesheet"    type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Martel" rel="stylesheet">
+    <script src="earth.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="content-inside">
+            <header>
+                <button type="button" onclick="location.href='MainPage.html'" class="top-return">Home</button>
+                <h1>Earth</h1>
+            </header>
+            
+            
+            <img class="main-image" src="images/earth600.png" alt="Earth" onclick="toggle()">
+            
+            <div id="Modal" class="modal">
+            <p id="caption"></p>
+              <p class="close" onclick="remove()">Close</p>
+              <img class="modal-content" id="img01" onclick="close()">
+            </div>
+            
+            <p><span>Diameter: </span>12600km</p>
+            <p><span>Mass: </span>6*10<sup>24</sup> kg</p>
+            <p><span>Surface gravity: </span>1g</p>
+            <p><span>Surface temperature: </span>Between negative 90 and positive 57 Celcius.</p>
+            <p><span>Rotation period: </span>23h 56min</p>
+            <p><span>Year length: </span>365.26 days.</p>
+            <p><span>Distance from the Sun: </span>1.5*10<sup>8</sup> km(1 AU)</p>
+            
+            
+            <h2>Third planet from the Sun </h2>
+            <p>The home of us, and all known living beings in the entire Universe. Also the only observed place to currently hold liquid water on its surface. Due to Earths uncommon axial tilt, the planet has prominent seasons affecting local the temperature and weather based on the time of the year. Because of Earths weather and geological activity, Earth also has by far the most complex surface texture of any planet, with its sharp mountain peaks, valleys and hills. Earth is also the biggest inner planet and the planet with the highest density.</p>
+            
+            <h2>History and Future</h2>
+            <p>The Earth formed around 4.5 billions years ago along with the rest of the Solar System. Due to all the in falling material, Earth was much hotter back then, and the surface was mostly molten lava. There is also a well-known hypothesis that during these early periods the Earth collided with another smaller planet called Theia, combining to form a bigger planet, with the debris forming our Moon.</p>
+            
+            <div class = "image-paragraph">
+                <img class="side-image" src="images/moon300.png" alt="The Moon" onclick="toggle2()">
+                <h2>The Moon</h2>
+                <p>The one moon of Earth. With its size of 3500km it’s the fourth largest moon in the Solar System, and the largest moon compared to its host planet (0.3 times Earth). Even though its as close to the Sun as Earth, it is much close because of its lack of an atmosphere, having an average temperature of -50 degrees Celsius. It is the only object outside Earth where humans have ever set foot. It orbits Earth every 27.3 days, and like all moons in the Solar System, it is tidally locked to its host planet, meaning it has always the same side facing Earth. Like all things in space, its further out than most people would believe, at 344 000 kilometers away, meaning you could fit 30 Earths between the Moon and Earth.</p>
+            </div>
+        </div>
+        
+    </div>
+    <div class="botbut">
+        <button type="button" onclick="location.href='MainPage.html'" class="bottom-reutrn">Home</button>
+        <button type="button" onclick="location.href='venus.html'" class="previous">Previous</button>
+        <button type="button" onclick="location.href='mars.html'" class="next">Next</button>
+    </div>
+    
+    <footer>
+        <p>Made by Tino Tero 2018</p>
+        <p>Photos by NASA, Edited by Tino Tero</p>
+    </footer>
+</body>

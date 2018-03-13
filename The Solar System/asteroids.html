@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+  <!-- PAKOLLINEN OTSIKKO -->  
+  <title>Asteroids</title>
+
+
+    <!-- Meta elementti on tietoa tiedosta-->
+    
+    <!-- Internet Exploria varten, etta kayttaa uusinta versiota-->
+  <meta http-equiv="X-UA-Compatible"   content="IE=edge"> 
+
+    <!-- Skaala pixelit pixelille-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Pitaa olla mukana etta skandin toimii-->
+  <meta charset="UTF-8">
+
+    <!-- MUSITA VAIHTAA CONTENT OMAAN NIMEEN!!-->
+  <meta name="author" content="Tino">
+    
+
+    
+    <!-- linkit ulkoisiin tiedostoidin-->
+  <link href="objectPage.css" rel="stylesheet"    type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Martel" rel="stylesheet">
+    <script src="asteroids.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="content-inside">
+            <header>
+                <button type="button" onclick="location.href='MainPage.html'" class="top-return">Home</button>
+                <h1>Asteroids</h1>
+            </header>
+            
+            
+            <img class="main-image" src="images/asteroids600.png" alt="Various asteroids" onclick="toggle()">
+            
+            <div id="Modal" class="modal">
+            <p id="caption"></p>
+              <p class="close" onclick="remove()">Close</p>
+              <img class="modal-content" id="img01" onclick="close()">
+            </div>
+            
+            <p>Asteroids come in billions, in all shapes and sizes. Some are tiny pebbles, some are hundreds of kilometers in size. Some are perfectly round, some are very strange shapes. Some travel alone, some go in pairs, and some have tiny moons orbiting them. Together… they don’t add up too much. Combined they would have only 4% the mass of our Moon. Asteroids smaller than 1 meters are usually called meteoroids, although there is no clear distinction between the two classes.</p>
+            
+            <h2>The asteroid belt</h2>
+            <p>The largest asteroid in the Solar System by quite a margin, considered a dwarf planet just like plutoids, sizing 950km across. It is the first ever asteroid to be discovered, and at the time of discovery in 1801 it was thought to be a planet. Only after multiple more objects were found orbiting in the same area, it was stripped off its status as a planet in the 1850s. Recent findings (2016) suggest that there might be geological activity present in Ceres, with salts appearing in its surface in many different spots.</p>
+            
+            <div class = "image-paragraph">
+                <img class="side-image" src="images/ceres300.png" alt="Ceres" onclick="toggle2()">
+                <h2>Ceres</h2>
+                <p>The largest asteroid in the Solar System by quite a margin, considered a dwarf planet just like plutoids, sizing 950km across. It is the first ever asteroid to be discovered, and at the time of discovery in 1801 it was thought to be a planet. Only after multiple more objects were found orbiting in the same area, it was stripped off its status as a planet in the 1850s. Recent findings (2016) suggest that there might be geological activity present in Ceres, with salts appearing in its surface in many different spots.</p>
+            </div>
+            
+            <h2>Meteors</h2>
+            <p>multiple small meteors burn up in the atmosphere, giving the effect of a shooting star. It is estimated that about 15 million kg of meteors fall on Earth every year. Few meteors are big enough to survive the burn through the atmosphere, and collide with Earth’s surface. Because of their speed of multiple kilometers per second, they can cause devastating damage. Besides asteroids, also comets can become meteors.</p>
+        </div>
+        
+    </div>
+    <div class="botbut">
+        <button type="button" onclick="location.href='MainPage.html'" class="bottom-reutrn">Home</button>
+        <button type="button" onclick="location.href='plutoids.html'" class="previous">Previous</button>
+        <button type="button" onclick="location.href='comets.html'" class="next">Next</button>
+    </div>
+    
+    <footer>
+        <p>Made by Tino Tero 2018</p>
+        <p>Photos by NASA, Edited by Tino Tero</p>
+    </footer>
+</body>

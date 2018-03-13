@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+  <!-- PAKOLLINEN OTSIKKO -->  
+  <title>The Sun</title>
+
+
+    <!-- Meta elementti on tietoa tiedosta-->
+    
+    <!-- Internet Exploria varten, etta kayttaa uusinta versiota-->
+  <meta http-equiv="X-UA-Compatible"   content="IE=edge"> 
+
+    <!-- Skaala pixelit pixelille-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Pitaa olla mukana etta skandin toimii-->
+  <meta charset="UTF-8">
+
+    <!-- MUSITA VAIHTAA CONTENT OMAAN NIMEEN!!-->
+  <meta name="author" content="Tino">
+    
+
+    
+    <!-- linkit ulkoisiin tiedostoidin-->
+  <link href="objectPage.css" rel="stylesheet"    type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Martel" rel="stylesheet">
+    <script src="sun.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="content-inside">
+            <header>
+                <button type="button" onclick="location.href='MainPage.html'" class="top-return">Home</button>
+                <h1>The Sun</h1>
+            </header>
+            
+            
+            <img class="main-image" src="images/sun600.png" alt="Sun" onclick="toggle()">
+            
+            <div id="Modal" class="modal">
+            <p id="caption"></p>
+              <p class="close" onclick="remove()">Close</p>
+              <img class="modal-content" id="img01" onclick="close()">
+            </div>
+            
+            <p><span>Diameter: </span>1 400 000km (109 times Earth)</p>
+            <p><span>Mass: </span>2*10<sup>30</sup> kg (330 times Earth)</p>
+            <p><span>Surface gravity: </span>28g</p>
+            <p><span>Surface temperature: </span>500 Celsius.</p>
+            <p><span>Rotation period: </span>25-34 Earth days (shorter at equator, longer at poles)</p>
+            <p><span>Distance from Earth: </span>1.5*10<sup>8</sup> km(1 AU)</p>
+            
+            
+            <h2>The heart of the Solar System</h2>
+            <p>Sun in a giant sphere of Plasma in the middle of our Solar System, radiating energy outwards in all directions. It holds 99.86% of all the mass in the Solar System, which is the reason why other bodies tend to orbit it. </p>
+            
+            <h2>The Sun is a star</h2>
+            <p>This might be obvious now, but for most of human history this was unknown. Essential for almost all life forms on Earth, the Sun has been praised as a god by many cultures through history. It location on the sky decides the daylight period of Earth and every other planet, and its relative movement in the sky still is what we base all of our time and calendars on. In the end, it is just one of the billions of stars in the Galaxy, working in a very similar way to the others we see during the night, the difference being that this one is much closer than all the others.</p>
+            
+            <h2>The core</h2>
+            <p>The core of the sun has a pressure of 260 billion times greater than Earths atmosphere, and a temperature of 15 million Celsius. These conditions are what allows for all of the power generation to happen. In this extreme environment, hydrogen is squeezed together so hard, that through a series of complicated nuclear fusion events it ends up as helium. The fusion of one atom does not release a noticeable amount of energy, but the Sun converts 700 million tons of hydrogen into helium every second, releasing the equivalent of 400 billion nuclear bombs every second. One might think that the Sun would run out of hydrogen quickly because of this, but these amounts are nothing compared to the mass of the Sun, allowing the process to last billions of years.</p>
+            
+            <h2>Solar evolution</h2>
+            <p>As the Sun was forming 4.5 billion years ago, it was first a proto star, gaining its heat from compressing gas instead of nuclear fusion. After ignition, the Sun has slowly become brighter, as the helium resulting from the hydrogen fusion giving the Sun a denser core, which makes the fusion faster. This is actually a bad sing for us, as in less than a billion years in the future, the Sun will have become so bright that it will evaporate all of Earths oceans and make our planet a hot inferno. Skip another 4 billion years and the Sun is expected to grow so much that it will engulf Earth, destroying the entire planet.</p>
+        </div>
+        
+    </div>
+    <div class="botbut">
+        <button type="button" onclick="location.href='MainPage.html'" class="bottom-reutrn">Home</button>
+        <button type="button" onclick="location.href='neptune.html'" class="previous">Previous</button>
+        <button type="button" onclick="location.href='plutoids.html'" class="next">Next</button>
+    </div>
+    
+    <footer>
+        <p>Made by Tino Tero 2018</p>
+        <p>Photos by NASA, Edited by Tino Tero</p>
+    </footer>
+</body>

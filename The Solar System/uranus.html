@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+  <!-- PAKOLLINEN OTSIKKO -->  
+  <title>Uranus</title>
+
+
+    <!-- Meta elementti on tietoa tiedosta-->
+    
+    <!-- Internet Exploria varten, etta kayttaa uusinta versiota-->
+  <meta http-equiv="X-UA-Compatible"   content="IE=edge"> 
+
+    <!-- Skaala pixelit pixelille-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Pitaa olla mukana etta skandin toimii-->
+  <meta charset="UTF-8">
+
+    <!-- MUSITA VAIHTAA CONTENT OMAAN NIMEEN!!-->
+  <meta name="author" content="Tino">
+    
+
+    
+    <!-- linkit ulkoisiin tiedostoidin-->
+  <link href="objectPage.css" rel="stylesheet"    type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Martel" rel="stylesheet">
+    <script src="uranus.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="content-inside">
+            <header>
+                <button type="button" onclick="location.href='MainPage.html'" class="top-return">Home</button>
+                <h1>Uranus</h1>
+            </header>
+            
+            
+            <img class="main-image" src="images/uranus600.png" alt="Uranus" onclick="toggle()">
+            
+            <div id="Modal" class="modal">
+            <p id="caption"></p>
+              <p class="close" onclick="remove()">Close</p>
+              <img class="modal-content" id="img01" onclick="close()">
+            </div>
+            
+            <p><span>Diameter: </span>50 000km (4 times Earth)</p>
+            <p><span>Mass: </span>8.7*10<sup>25</sup> kg (14.5 times Earth)</p>
+            <p><span>Surface gravity: </span>0.9g</p>
+            <p><span>Surface temperature: </span>-198 Celsius.</p>
+            <p><span>Day length: </span>17h 14min</p>
+            <p><span>Year length: </span>84 Earth years</p>
+            <p><span>Distance from the Sun: </span>2.9*10<sup>9</sup> km(19 AU)</p>
+            
+            
+            <h2>The first ice giant</h2>
+            <p>Uranus is probably the most visually boring planet. No clouds or any other visually notable exist on the planet, just cyan ball colored by the tint of methane in its atmosphere. Notable fact about the planet is its sideways rotation. While Earths tilt gives us our seasons, in Uranus the 90degrees tilt makes this much more extreme, where most of the planet spends 42 years in constant darkness or light as the planet revolves around the Sun. Just like in Venus, astronomers haven’t figured out what could have caused this strange rotation direction.</p>
+            
+            <h2>Composition</h2>
+            <p>Primarily made of hydrogen and helium like all the outer planets, but still called an ice giant because of the relatively high amount of ammonia, water, ammonium hydrosulfide and methane hydrate all which astronomers for some reason call ices when in solid form. Its predicted that deep inside Uranus where the pressure is high, methane molecules break up releasing carbon, which then gets compressed into diamonds, resulting in diamonds raining from the sky. Experiments also suggest that in the deeps there will be an ocean of liquid diamond.</p>
+            
+            <h2>Discovery</h2>
+            <p>Uranus was the first planet to be discovered, as in it wasn’t known to be a planet since ancient times. Even though visible by naked eye in optimal conditions, it wasn’t recognized as a planet because of its dimness and slow orbit, and was instead considered a distant star. In the year 1781 Sir William Herschel finally noticed that Uranus was indeed an object orbiting the Sun, but though at it was a comet at the time. Some other astronomers suspected otherwise, and two years later Uranus was officially declared a planet.</p>
+            
+            <div class = "image-paragraph">
+                <img class="side-image" src="images/miranda300.png" alt="Miranda" onclick="toggle2()">
+                <h2>Moons</h2>
+                <p>As of writing, Saturn has 62 known moons. Out of these Titan, is by far the largest, compromising 96% of all the mass of the moons of Saturn. It is also the second largest moon in the Solar System and the first to be discovered after the Galilean moons. Titan is also the only moon with a dense atmosphere, which leads to another special feature of the moon. It’s the only place on the Solar System along with Earth where we have found stable liquids on the surface. However, unlike on Earth this isn’t water, Titan has lakes of liquid methane.</p>
+            </div>
+        </div>
+        
+    </div>
+    <div class="botbut">
+        <button type="button" onclick="location.href='MainPage.html'" class="bottom-reutrn">Home</button>
+        <button type="button" onclick="location.href='saturn.html'" class="previous">Previous</button>
+        <button type="button" onclick="location.href='neptune.html'" class="next">Next</button>
+    </div>
+    
+    <footer>
+        <p>Made by Tino Tero 2018</p>
+        <p>Photos by NASA, Edited by Tino Tero</p>
+    </footer>
+</body>
